@@ -10,12 +10,20 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/code
-      to: /home/vagrant/code
+    - map: /var/www/emsender
+      to: /home/vagrant/code/emsender
+    - map: /var/www/UCSender
+      to: /home/vagrant/code/ucsender
+    - map: /var/www/testapp
+      to: /home/vagrant/code/testapp
 
 sites:
     - map: homestead.test
-      to: /home/vagrant/code/public
+      to: /home/vagrant/code/emsender/public
+    - map: emsender.test
+      to: /home/vagrant/code/emsender/public
+    - map: testapp.test
+      to: /home/vagrant/code/testapp/public
 
 databases:
     - homestead
