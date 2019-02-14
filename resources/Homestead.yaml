@@ -14,8 +14,6 @@ folders:
       to: /home/vagrant/code/emsender
     - map: /var/www/UCSender
       to: /home/vagrant/code/ucsender
-    - map: /var/www/UCSender_beta
-      to: /home/vagrant/code/ucsender_beta
     - map: /var/www/testapp
       to: /home/vagrant/code/testapp
 
@@ -25,7 +23,7 @@ sites:
     - map: emsender.test
       to: /home/vagrant/code/emsender/public
     - map: ucsender.test
-      to: /home/vagrant/code/ucsender_beta/public
+      to: /home/vagrant/code/ucsender/public
     - map: testapp.test
       to: /home/vagrant/code/testapp/public
 
